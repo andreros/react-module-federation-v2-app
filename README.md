@@ -1,2 +1,5 @@
-# react-module-federation-app
-React platform implementing micro-frontend architecture through https://module-federation.io.
+# React Module Federation Application
+
+React platform implementing micro-frontend architecture through [https://module-federation.io](https://module-federation.io).
+
+For more information, please also visit [https://github.com/module-federation](https://github.com/module-federation).
