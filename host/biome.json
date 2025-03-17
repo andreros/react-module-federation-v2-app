@@ -1,0 +1,117 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 160,
+    "attributePosition": "auto",
+    "bracketSpacing": true
+  },
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "recommended": false
+      },
+      "performance": {
+        "recommended": true,
+        "noAccumulatingSpread": "off"
+      },
+      "complexity": {
+        "recommended": true,
+        "noExcessiveCognitiveComplexity": "warn",
+        "noUselessTypeConstraint": "error",
+        "noUselessConstructor": "error",
+        "useLiteralKeys": { "level": "error", "fix": "safe" },
+        "useOptionalChain": { "level": "error", "fix": "safe" }
+      },
+      "correctness": {
+        "recommended": true,
+        "noUnusedImports": "error",
+        "useHookAtTopLevel": "error",
+        "noUndeclaredVariables": "off",
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "recommended": true,
+        "noRestrictedGlobals": "error",
+        "noNamespace": "error",
+        "noDefaultExport": "warn",
+        "noNamespaceImport": "info",
+        "noNegationElse": "error",
+        "noNonNullAssertion": "info",
+        "useNodejsImportProtocol": "off",
+        "useTemplate": { "level": "error", "fix": "safe" },
+        "useSelfClosingElements": { "level": "error", "fix": "safe" },
+        "noUselessElse": { "level": "error", "fix": "unsafe" },
+        "useNamingConvention": {
+          "level": "error",
+          "fix": "safe",
+          "options": {
+            "strictCase": false,
+            "conventions": [
+              {
+                "selector": { "kind": "variable" },
+                "formats": ["camelCase", "CONSTANT_CASE", "PascalCase"],
+                "match": "(_*?).*"
+              },
+              {
+                "selector": { "kind": "objectLiteralProperty" },
+                "formats": ["camelCase", "CONSTANT_CASE", "PascalCase"],
+                "match": "(_*?).*"
+              },
+              {
+                "selector": { "kind": "enumMember" },
+                "formats": ["camelCase"]
+              },
+              {
+                "formats": ["camelCase", "CONSTANT_CASE", "PascalCase"],
+                "match": ".*"
+              }
+            ]
+          }
+        }
+      },
+      "suspicious": {
+        "recommended": true,
+        "noExplicitAny": "off",
+        "noGlobalIsNan": "off",
+        "noPrototypeBuiltins": "off",
+        "noArrayIndexKey": "warn"
+      },
+      "security": {
+        "recommended": true,
+        "noDangerouslySetInnerHtml": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "none",
+      "semicolons": "always",
+      "arrowParentheses": "asNeeded",
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    },
+    "globals": []
+  },
+  "files": {
+    "ignore": ["rsbuild.config.ts", "node_cache", "@types", "@mf-types", "node_modules"]
+  }
+}
