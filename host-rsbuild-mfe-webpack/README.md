@@ -1,4 +1,4 @@
-# Host application with rsbuild bundler and microforntend with webpack bundler example
+# Host application with rsbuild bundler + microfrontend with webpack bundler example
 
 - host: http://localhost:4000/
 - mfe: http://localhost:4001/
