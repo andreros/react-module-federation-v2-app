@@ -10,3 +10,4 @@ All apps are implemented with the following tech stack:
 - TypeScript
 - Module Federation Plugin v2.0
 - Biome
+- Rsbuild

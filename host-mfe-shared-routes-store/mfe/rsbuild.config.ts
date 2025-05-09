@@ -6,18 +6,21 @@ export default defineConfig({
   plugins: [
     pluginReact(),
     pluginModuleFederation({
-      name: 'host',
-      remotes: {
-        mfe1: 'mfe1@http://localhost:4001/mf-manifest.json',
-        mfe2: 'mfe2@http://localhost:4002/mf-manifest.json',
+      name: 'mfe',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './mfeApp': './src/App.tsx',
       },
-      shared: ['react', 'react-dom'],
+      remotes: {
+        host: 'host@http://localhost:4000/remoteEntry.js'
+      },
+      shared: ['immer', 'react', 'react-dom', 'react-router-dom', 'zustand'],
     }),
   ],
   html: {
-    title: 'Module Federation Host Application'
+    title: 'Micro Frontend Application'
   },
   server: {
-    port: 4000,
+    port: 4001,
   },
 });
