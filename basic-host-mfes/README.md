@@ -6,7 +6,7 @@
 
 All apps are implemented with the following tech stack:
 
-    - React 19
-    - TypeScript
-    - Module Federation Plugin v2.0
-    - Biome
+- React 19
+- TypeScript
+- Module Federation Plugin v2.0
+- Biome
