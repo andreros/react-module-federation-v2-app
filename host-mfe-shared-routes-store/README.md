@@ -4,7 +4,7 @@
 - mfe: http://localhost:4001/
 
 The module federation configuration in this project is based in the `filename: 'remoteEntry.js'` definition. This is useful if you want to integrate other 
-microfrontends built with Webpack 5.
+microfrontends built with Webpack 5, if needed.
 
 All apps are implemented with the following tech stack:
 
