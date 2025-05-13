@@ -1,0 +1,39 @@
+{
+  "name": "react-module-federation-mfe-webpack",
+  "description": "Microfrontend  application for a React platform implementing microfrontends architecture with React 16 and Webpack 5.",
+  "author": {
+    "name": "André Rosa",
+    "email": "andreros@gmail.com"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack serve --mode development --env PORT=4001",
+    "build": "webpack --mode production",
+    "lint": "biome check --diagnostic-level=warn",
+    "lint:fix": "biome check --write . --diagnostic-level=warn",
+    "nuke": "rm -rf pnpm-lock.yaml && npm cache clean --force && pnpm i"
+  },
+  "devDependencies": {
+    "@babel/core": "7.27.1",
+    "@babel/preset-env": "7.27.2",
+    "@babel/preset-react": "7.27.1",
+    "@babel/preset-typescript": "7.27.1",
+    "@biomejs/biome": "1.9.4",
+    "@types/react": "16.14.22",
+    "@types/react-dom": "16.9.9",
+    "babel-loader": "10.0.0",
+    "css-loader": "7.1.2",
+    "html-webpack-plugin": "5.6.3",
+    "style-loader": "4.0.0",
+    "ts-loader": "9.5.2",
+    "typescript": "5.8.3",
+    "webpack": "5.99.8",
+    "webpack-cli": "6.0.1",
+    "webpack-dev-server": "5.2.1"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "0.13.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  }
+}

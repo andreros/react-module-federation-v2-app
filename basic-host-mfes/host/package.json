@@ -11,7 +11,7 @@
     "dev": "rsbuild dev --open",
     "lint": "biome check --diagnostic-level=warn",
     "lint:fix": "biome check --write . --diagnostic-level=warn",
-    "nuke": "rm -rf pnpm-lock.json && npm cache clean --force && pnpm i",
+    "nuke": "rm -rf pnpm-lock.yaml && npm cache clean --force && pnpm i",
     "preview": "rsbuild preview"
   },
   "devDependencies": {
