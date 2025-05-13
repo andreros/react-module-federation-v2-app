@@ -46,9 +46,9 @@ module.exports = (env, argv) => {
                 exposes: {
                     './app': './src/app.tsx',
                 },
-                remotes: {
-                    host: 'host@http://localhost:4000/remoteEntry.js',
-                },
+                // remotes: {
+                //     host: 'host@http://localhost:4000/remoteEntry.js',
+                // },
                 shared: {
                     react: { singleton: false, eager: true, requiredVersion: '16.x' },
                     'react-dom': { singleton: false, eager: true, requiredVersion: '16.x' },

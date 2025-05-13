@@ -1,6 +1,6 @@
 {
   "name": "react-module-federation-mfe-webpack",
-  "description": "Microfrontend  application for a React platform implementing microfrontends architecture with React 16 and Webpack 5.",
+  "description": "Microfrontend application for a React platform implementing microfrontends architecture with React 16 and Webpack 5.",
   "author": {
     "name": "André Rosa",
     "email": "andreros@gmail.com"
