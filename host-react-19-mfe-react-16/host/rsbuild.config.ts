@@ -18,9 +18,10 @@ export default defineConfig({
     }),
   ],
   html: {
-    title: 'React 19 Host Application'
+    title: 'React 19 Host Application',
+    template: './static/index.html'
   },
   server: {
-    port: 4001
+    port: 4000
   },
 });
