@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Banco CTT</title>
+		<script src="./env-config.js"></script>
+	</head>
+	<body>
+		<div id="root-menu"></div>
+		<div id="root-container">
+			<div id="root-submenu"></div>
+			<div id="root-cj"></div>
+			<div class="right-panel-no-style"></div>
+			<style type="text/css">
+				#root-container-react-19 {
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 16px;
+					background-image: linear-gradient(to bottom, #020917, #101725);
+					z-index: 1002;
+				}
+			</style>
+			<div id="root-container-react-19"></div>
+		</div>
+	</body>
+</html>
+
+import { MountRemoteComponent } from '@/components/mount-remote-component';
+
+// *******************************************************************************************************************
+// PROOF OF CONCEPT
+ReactDOM.render(<MountRemoteComponent id="hbCjMfe/hbCjMfeApp" />, document.getElementById('root-container-react-19'));
+// *******************************************************************************************************************

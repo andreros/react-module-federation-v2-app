@@ -1,11 +1,12 @@
 {
   "name": "react-module-federation-mfe-webpack",
   "description": "Microfrontend application for a React platform implementing microfrontends architecture with React 16 and Webpack 5.",
+  "version": "1.0.0",
   "author": {
     "name": "André Rosa",
     "email": "andreros@gmail.com"
   },
-  "version": "1.0.0",
+  "license": "Unlicense",
   "scripts": {
     "dev": "webpack serve --mode development --env PORT=4001",
     "build": "webpack --mode production",

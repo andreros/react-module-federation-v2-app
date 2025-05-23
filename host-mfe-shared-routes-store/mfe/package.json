@@ -1,11 +1,12 @@
 {
   "name": "react-module-federation-mfe1",
   "description": "Microfrontend 1 application for a React platform implementing microfrontends architecture.",
+  "version": "1.0.0",
   "author": {
     "name": "André Rosa",
     "email": "andreros@gmail.com"
   },
-  "version": "1.0.0",
+  "license": "Unlicense",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
